@@ -1,74 +1,39 @@
-/* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
-
-/* 
-.option-one-screen, 
-.option-two-screen, 
-.option-one-end, 
-.option-two-end  {
-   display:none;
-}
-*/
-
-
-/* Feel free to change any of the styling below!*/
 html,
 body {
     margin: 0;
     padding: 0;
 }
 
-/* Style the body with a background color or image if desired */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
     text-align: center;
     padding: 20px;
 }
 
-/* Style the title of your story */
 .title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* Style the story opening container */
 .story-opening {
-    background-image: url("https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/2xqez9sn.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 305px;
+    background-color: #fdf8f8;
+    border: 0px solid #ccc;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(196, 175, 175, 0.2);
 }
 
-/* Style the story image */
-.story-opening img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 130px;
-}
-
-/* Style the story opening message */
-.story-opening h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-/* Style the buttons container */
 .buttons {
     margin: 20px;
 }
 
-/* Style the option buttons */
 button {
-    font-size: 16px;
+    font-size: 50px;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #007bff;
+    background-color: #ffbb00;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -80,46 +45,24 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Style the screens for option one and option two */
-.option-one-screen {
-     background-image: url("https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/5p37tskw.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 305px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
+.option-one-screen,
+.option-two-screen,
+.option-one-end,
+.option-two-end {
+    display: none; /* Hide sections initially */
 }
-.option-two-screen {
-    background-image: url("https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/c2idyaub.gif") ;
-     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #fff;
+
+.option-one-end, 
+.option-two-end {
+    padding: 20px;
     border: 1px solid #ccc;
-    padding: 305px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
 }
-/* Style the images in the screens */
-.option-one-screen img,
-.option-two-screen img,
+
 .option-one-end img,
 .option-two-end img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
-}
-
-/* Style the text in the screens */
-.option-one-screen h1,
-.option-two-screen h1,
-.option-one-end h1,
-.option-two-end h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    display: block;
 }

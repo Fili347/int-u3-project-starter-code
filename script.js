@@ -1,37 +1,32 @@
-// Declare variables below to save the different divs of your story.
+document.addEventListener('DOMContentLoaded', () => {
+    const optionOneBtn = document.querySelector('.option-one');
+    const optionTwoBtn = document.querySelector('.option-two');
+    const optionOneScreen = document.querySelector('.option-one-screen');
+    const optionTwoScreen = document.querySelector('.option-two-screen');
+    const optionOneEnd = document.querySelector('.option-one-end');
+    const optionTwoEnd = document.querySelector('.option-two-end');
+    const optionOneContinueBtn = document.querySelector('.option-one-continue');
+    const optionTwoContinueBtn = document.querySelector('.option-two-continue');
 
-let storyOpeningScreen = document.querySelector(".story-opening");
-let optionOneButton = document.querySelector(".option-one");
-let optionTwoButton = document.querySelector(".option-two");
+    optionOneBtn.addEventListener('click', () => {
+        document.querySelector('.story-opening').style.display = 'none';
+        document.querySelector('.buttons').style.display = 'none';
+        optionOneScreen.style.display = 'block';
+    });
 
-let optionOneScreen = document.querySelector( ".option-one-screen");
-let optionTwoScreen = document.querySelector( ".option-two-screen");
+    optionTwoBtn.addEventListener('click', () => {
+        document.querySelector('.story-opening').style.display = 'none';
+        document.querySelector('.buttons').style.display = 'none';
+        optionTwoScreen.style.display = 'block';
+    });
 
+    optionOneContinueBtn.addEventListener('click', () => {
+        optionOneScreen.style.display = 'none';
+        optionOneEnd.style.display = 'block';
+    });
 
-
-
-
-
-// When you're ready to make event handlers, uncomment the code below. 
-//  - Then fill in the blanks with the correct variables.
-
-
-optionOneButton.addEventListener('click', function(){
-  optionOneScreen.style.display = "block";
-  optionTwoScreen.style.display = "none";
-  storyOpeningScreen.style.display = "none";
-  optionOneButton.style.display = "none";
-  optionTwoButton.style.display = "none";
+    optionTwoContinueBtn.addEventListener('click', () => {
+        optionTwoScreen.style.display = 'none';
+        optionTwoEnd.style.display = 'block';
+    });
 });
-
-optionTwoButton.addEventListener('click', function(){
-  optionOneScreen.style.display = "none";
-  optionTwoScreen.style.display = "block";
-  optionTwoButton.style.display = "none";
-  optionOneButton.style.display = "none";
-});
-
-
-// INSERT_VARIABLE.addEventListener('click', function(){
-
-// });
