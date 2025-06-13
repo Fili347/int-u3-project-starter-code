@@ -34,9 +34,13 @@ body {
 
 /* Style the story opening container */
 .story-opening {
+    background-image: url("https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/2xqez9sn.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-color: #fff;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 305px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -45,7 +49,7 @@ body {
 .story-opening img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 130px;
 }
 
 /* Style the story opening message */
@@ -77,18 +81,30 @@ button:hover {
 }
 
 /* Style the screens for option one and option two */
-.option-one-screen,
-.option-two-screen,
-.option-one-end,
-.option-two-end {
+.option-one-screen {
+     background-image: url("https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/5p37tskw.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: #fff;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 305px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
 }
-
+.option-two-screen {
+    background-image: url("https://storage.gra.cloud.ovh.net/v1/AUTH_728ab22ba0c842468a897907be9a7075/flipanim/anim/c2idyaub.gif") ;
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 305px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
 /* Style the images in the screens */
 .option-one-screen img,
 .option-two-screen img,
